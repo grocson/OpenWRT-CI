@@ -188,6 +188,9 @@ jobs:
           chmod +x diy-part1.sh
           bash diy-part1.sh
 
+      - name: Make Defconfig
+        run: |
+          cd ./wrt/  # <--- 关键：必须再次进入源码根目录
           make defconfig -j$(nproc) && make clean -j$(nproc)
 
       - name: Download Packages
