@@ -1,16 +1,18 @@
 #科学插件调整
-CONFIG_PACKAGE_luci-app-homeproxy=y
+CONFIG_PACKAGE_luci-app-homeproxy=n
+CONFIG_PACKAGE_luci-app-passwall=y
 #增加插件
 CONFIG_PACKAGE_luci-app-autoreboot=y
-CONFIG_PACKAGE_luci-app-gecoosac=y
+CONFIG_PACKAGE_luci-app-gecoosac=n
 CONFIG_PACKAGE_luci-app-mini-diskmanager=y
 CONFIG_PACKAGE_luci-app-partexp=y
 CONFIG_PACKAGE_luci-app-samba4=y
 CONFIG_PACKAGE_luci-app-upnp=y
-CONFIG_PACKAGE_luci-app-wolultra=y
+CONFIG_PACKAGE_luci-app-wolultra=n
+CONFIG_PACKAGE_luci-app-frpc=y
 #删除插件
 CONFIG_PACKAGE_luci-app-attendedsysupgrade=n
-CONFIG_PACKAGE_luci-app-wol=n
+CONFIG_PACKAGE_luci-app-wol=y
 #参数调整
 CONFIG_CCACHE=y
 CONFIG_DEVEL=y
@@ -120,3 +122,4 @@ CONFIG_PACKAGE_xz-utils=y
 CONFIG_PACKAGE_qmodem_INCLUDE_generic-qmi-wwan=y
 CONFIG_PACKAGE_qmodem_INCLUDE_nss-qmi-wwan=n
 CONFIG_PACKAGE_qmodem_INCLUDE_vendor-qmi-wwan=n
+CONFIG_PACKAGE_xray-core=y
