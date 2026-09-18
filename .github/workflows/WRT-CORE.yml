@@ -183,6 +183,11 @@ jobs:
 
           $GITHUB_WORKSPACE/Scripts/Settings.sh
 
+      - name: Execute DIY Script
+        run: |
+          chmod +x diy-part1.sh
+          bash diy-part1.sh
+
           make defconfig -j$(nproc) && make clean -j$(nproc)
 
       - name: Download Packages
