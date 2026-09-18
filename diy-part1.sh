@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# 假设当前目录已是 OpenWrt 源码根目录
+# 假设当前目录不是 OpenWrt 源码根目录
 cd ./wrt/ 
 
 echo "Step 1: Update and install default feeds"
