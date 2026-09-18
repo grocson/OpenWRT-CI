@@ -3,6 +3,11 @@
 # 进入 OpenWrt 源码根目录
 cd ./wrt/ 
 
+# 在 cd ./wrt/ 之后执行这行命令，给报错的脚本补加执行权限
+chmod +x /mnt/build_wrt/package/network/utils/fullconenat-sonic/patches/apply-luci-feed.sh
+#如果后续还可能遇到其他同类脚本权限报错，可以启用下句直接批量给所有 sh 脚本添加执行权限
+#find /mnt/build_wrt/package -name "*.sh" -exec chmod +x {} \;
+
 # 1. 全量清理所有干扰项，彻底清除旧的缓存和 feed 索引
 rm -rf tmp/
 rm -rf feeds/
